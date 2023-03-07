@@ -21,7 +21,7 @@ st.set_page_config(
   
 # DATA 
 
-spring_03 = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/spring_2003.csv')
+spring_03 = pd.read_csv('datasets/spring_2003.csv')  
 fall_03 = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/fall_2003.csv')
 spring_04 = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/spring_2004.csv')
 fall_04 = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/fall_2004.csv')
