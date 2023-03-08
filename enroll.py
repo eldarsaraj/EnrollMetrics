@@ -437,17 +437,17 @@ with st.container():
          st.metric(label='Total sections', value=132, delta='-15')
          
     with col4:
-         st.metric(label='Sections cancelled in Spring 2023', value=120, delta='')
+         st.metric(label='Sections cancelled', value=120, delta='')
          
     with col5:
-         st.metric(label='Teaching faculty in Spring 2023', value=49, delta='')
+         st.metric(label='Teaching faculty', value=49, delta='')
     
     
          
 # SECOND LINE
  
 with st.container():
-    st.markdown('## Overwiew')  
+    st.markdown('## Overwiew - Spring 2023')  
    
     col1, col2 = st.columns(2)
  
@@ -935,16 +935,20 @@ with st.container():
             domain=['ACL', 'ACR', 'CRT', 'ESL', 'LIN'],
             range=[ '#023e8a', '#48cae4', '#03045e', '#219ebc', '#8ecae6'])
 
-        chart = alt.Chart(source).encode(
-            theta=alt.Theta('Cancelled', stack=True), color=alt.Color('Course Group', scale=custom_color_scale, legend=None)
-            )
-
-        title = alt.TitleParams(text='Section cancellations in Spring 2023 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
-        chart = chart.properties(title=title)
-
-        chart = chart.mark_arc(outerRadius=90)
-        text = chart.mark_text(radius=110, size=13).encode(text='Course Group')
-
-        whole = chart + text
         
-        st.altair_chart(whole, use_container_width=True)
+        chart = alt.Chart(source).mark_bar().encode(
+            x=alt.X('Course Group'),
+            y=alt.Y('Cancelled', stack=True), color=alt.Color('Course Group', scale=custom_color_scale, legend=None)
+            ).properties(
+               height = 400
+            )
+                        
+
+        title = alt.TitleParams(text='Section cancellations in Spring 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+        chart = chart.properties(title=title)
+        
+        chart = chart.configure_axis(labelAngle=-0, title='')
+
+        
+        
+        st.altair_chart(chart, use_container_width=True)
