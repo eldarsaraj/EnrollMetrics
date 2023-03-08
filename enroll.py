@@ -809,7 +809,7 @@ with st.container():
 with st.container():
     st.markdown('## Classes')
     
-    col1, col2, col3 = st.columns((3,2,1))
+    col1, col2, col3 = st.columns((2,2,1))
     
     with col1:
         def class_heatmap(df):
