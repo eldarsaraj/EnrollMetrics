@@ -413,7 +413,7 @@ totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
 
 with st.sidebar:
      
-    with open('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/style.css') as f:
+    with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         st.header('About')
         st.markdown('Enrollment dashboard for the *Department of Academic Literacy and Linguistics* at **CUNY Borough of Manhattan Community College**.')
@@ -427,7 +427,7 @@ with st.container():
 
     with col1:
         
-        st.image('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/enrollmetrics.png') 
+        st.image('enrollmetrics.png') 
              
     with col2:   
         
@@ -882,12 +882,12 @@ with st.container():
           
             st.altair_chart(chart, use_container_width=True) 
             
-        query_23 = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/Spring_23_query.csv', header=1)
+        query_23 = pd.read_csv('datasets/Spring_23_query.csv', header=1)
         
         class_heatmap(query_23)
         
     with col2:
-        query = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/Spring_23_query.csv', header=1).fillna(0)
+        query = pd.read_csv('datasets/Spring_23_query.csv', header=1).fillna(0)
         where = query[['Subject', 'Room']]
         where_df = where[where['Room'] != 0]
 
@@ -924,7 +924,7 @@ with st.container():
         st.altair_chart(chart, use_container_width=True) 
         
     with col3:
-        status = pd.read_csv('/Users/eldarsarajlic/Desktop/Documents/Data_Projects/streamlit2/datasets/Spring_23_query.csv', header=1)
+        status = pd.read_csv('datasets/Spring_23_query.csv', header=1)
         status = status[['Class Stat', 'Subject']]
         status.columns = ['Status', 'Course Group']
         status_pivot = status.pivot_table(index='Status', columns='Course Group', aggfunc=len)
