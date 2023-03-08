@@ -871,7 +871,7 @@ with st.container():
                 color=alt.Color('Count:Q', title='# of class meetings', scale=alt.Scale(scheme='blues')),
                 #tooltip=[alt.Tooltip('Count:Q', title='# of class meetings')]
             ).properties(
-                width=700,
+                width=400,
                 height=400
             )
             
@@ -914,7 +914,7 @@ with st.container():
             x='Count',
             y='Room',
             color=alt.Color('Course', scale=custom_color_scale, legend=None), order=alt.Order('Course', sort='ascending')).properties(
-                width=500, height = 400
+                width=300, height = 400
             )
                         
         title = alt.TitleParams(text='Class mode and location in Spring 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
@@ -942,8 +942,8 @@ with st.container():
         title = alt.TitleParams(text='Section cancellations in Spring 2023 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
         chart = chart.properties(title=title)
 
-        chart = chart.mark_arc(outerRadius=100)
-        text = chart.mark_text(radius=140, size=13).encode(text='Course Group')
+        chart = chart.mark_arc(outerRadius=90)
+        text = chart.mark_text(radius=110, size=13).encode(text='Course Group')
 
         whole = chart + text
         
