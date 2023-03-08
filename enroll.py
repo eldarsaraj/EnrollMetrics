@@ -809,7 +809,7 @@ with st.container():
 with st.container():
     st.markdown('## Classes')
     
-    col1, col2, col3 = st.columns((2,2,1))
+    col1, col2, col3 = st.columns((3,2,1))
     
     with col1:
         def class_heatmap(df):
@@ -943,12 +943,9 @@ with st.container():
                height = 400
             )
                         
-
         title = alt.TitleParams(text='Section cancellations in Spring 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
         chart = chart.properties(title=title)
         
         chart = chart.configure_axis(labelAngle=-0, title='')
 
-        
-        
         st.altair_chart(chart, use_container_width=True)
