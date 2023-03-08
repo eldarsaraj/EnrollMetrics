@@ -868,7 +868,7 @@ with st.container():
             chart = alt.Chart(df_pivot_long).mark_rect().encode(
                 y=alt.Y('Mtg Start:N', title='Class start time', scale=alt.Scale(domain=(ticks))),
                 x=alt.X('Day:O', sort=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']),
-                color=alt.Color('Count:Q', title='# of class meetings', scale=alt.Scale(scheme='blues')),
+                color=alt.Color('Count:Q', title='# of class meetings', scale=alt.Scale(scheme='blues'), legend=None),
                 #tooltip=[alt.Tooltip('Count:Q', title='# of class meetings')]
             ).properties(
                 width=400,
