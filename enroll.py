@@ -811,8 +811,10 @@ with st.container():
     with col1:
         def class_heatmap(df):
             times = df[df[['Days', 'Mtg Start']].notna().all(axis=1)]
-            times.loc[:, 'Mtg Start'] = pd.to_datetime(times['Mtg Start'], errors = 'coerce')
-            times.loc[:, 'Mtg End'] = pd.to_datetime(times['Mtg End'])
+            times.loc[:, 'Mtg Start'] = pd.to_datetime(times['Mtg Start'], format='%I:%M%p')
+            times.loc[:, 'Mtg End'] = pd.to_datetime(times['Mtg End'], format='%I:%M%p')
+
+            # Convert datetime back to string in the 24-hour format
             times.loc[:, 'Mtg Start'] = times['Mtg Start'].dt.strftime('%H:%M')
             times.loc[:, 'Mtg End'] = times['Mtg End'].dt.strftime('%H:%M')
             
