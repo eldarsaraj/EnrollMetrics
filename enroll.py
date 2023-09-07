@@ -810,13 +810,24 @@ with st.container():
     
     with col1:
         def class_heatmap(df):
+            # Filter out rows where 'Days' or 'Mtg Start' is NaN
             times = df[df[['Days', 'Mtg Start']].notna().all(axis=1)]
-            times.loc[:, 'Mtg Start'] = pd.to_datetime(times['Mtg Start'], format='%I:%M%p')
-            times.loc[:, 'Mtg End'] = pd.to_datetime(times['Mtg End'], format='%I:%M%p')
 
-            # Convert datetime back to string in the 24-hour format
-            times.loc[:, 'Mtg Start'] = times['Mtg Start'].dt.strftime('%H:%M')
-            times.loc[:, 'Mtg End'] = times['Mtg End'].dt.strftime('%H:%M')
+            try:
+                # Convert to datetime with explicit format
+                times.loc[:, 'Mtg Start'] = pd.to_datetime(times['Mtg Start'], format='%I:%M%p')
+                times.loc[:, 'Mtg End'] = pd.to_datetime(times['Mtg End'], format='%I:%M%p')
+                
+                # Convert datetime back to string in the 24-hour format
+                times.loc[:, 'Mtg Start'] = times['Mtg Start'].dt.strftime('%H:%M')
+                times.loc[:, 'Mtg End'] = times['Mtg End'].dt.strftime('%H:%M')
+            except Exception as e:
+                print(f"Error encountered: {e}")
+                print("Problematic 'Mtg Start' values:")
+                print(times.loc[pd.to_datetime(times['Mtg Start'], errors='coerce').isna(), 'Mtg Start'])
+                print("Problematic 'Mtg End' values:")
+                print(times.loc[pd.to_datetime(times['Mtg End'], errors='coerce').isna(), 'Mtg End'])
+
             
             day_dict = {
             'M': 'Monday',
