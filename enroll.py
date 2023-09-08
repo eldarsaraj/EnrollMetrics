@@ -874,7 +874,9 @@ with st.container():
 
             df_pivot_long = df_pivot.reset_index().melt(id_vars=['Day'], var_name=['Mtg Start', 'Mtg End'], value_name='Count')
             
-            ticks = list(df_pivot_long['Mtg Start'].unique())   
+            ticks = pd.to_datetime(df_pivot_long['Mtg Start']).dt.strftime('%H:%M').unique().tolist()
+
+            ticks2 = list(df_pivot_long['Mtg Start'].unique())   
             
             chart = alt.Chart(df_pivot_long).mark_rect().encode(
                 y=alt.Y('Mtg Start:O', title='Class start time', scale=alt.Scale(domain=(ticks))),
