@@ -412,7 +412,7 @@ with st.container():
     with col1:
         st.markdown('#### Students')
         variable_selector = st.selectbox('Choose course group enrollment', ['ACL', 'CRT', 'ESL', 'LIN'])
-        default_color = '#D3D3D3'
+        default_color = '#E6E6E6'
         selected_color = '#003264'
 
         # Line chart
@@ -456,7 +456,7 @@ with st.container():
     with col2:
         st.markdown('#### Sections')
         variable_selector = st.selectbox('Choose course group sections', ['ACL', 'CRT', 'ESL', 'LIN'])
-        default_color = '#D3D3D3'
+        default_color = '#E6E6E6'
         selected_color = '#FF914D'
 
         # Line chart
@@ -868,7 +868,6 @@ with st.container():
                                 day_df[day_df['Day']=='Sunday']],
                                 axis=0)
             
-            
             stacked_days['Mtg Start'] = stacked_days['Mtg Start'].astype(str)
             stacked_days['Mtg End'] = stacked_days['Mtg End'].astype(str)
 
@@ -878,16 +877,10 @@ with st.container():
             
             df_pivot_long['Mtg Start'] = pd.to_datetime(df_pivot_long['Mtg Start']).dt.strftime('%H:%M')
 
-
-
-            ticks = pd.to_datetime(df_pivot_long['Mtg Start']).dt.strftime('%H:%M').unique().tolist()
-
-            ticks2 = list(df_pivot_long['Mtg Start'].unique())
-            
-    
+            ticks = list(df_pivot_long['Mtg Start'].unique())
             
             chart = alt.Chart(df_pivot_long).mark_rect().encode(
-                y=alt.Y('Mtg Start:O', title='Class start time', scale=alt.Scale(domain=ticks2)),  # Explicitly set the domain using the cleaned-up ticks
+                y=alt.Y('Mtg Start:O', title='Class start time', scale=alt.Scale(domain=ticks)),  # Explicitly set the domain using the cleaned-up ticks
                 x=alt.X('Day:O', sort=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']),
                 color=alt.Color('Count:Q', title='# of class meetings', scale=alt.Scale(scheme='blues'), legend=None),
                 #tooltip=[alt.Tooltip('Count:Q', title='# of class meetings')]
