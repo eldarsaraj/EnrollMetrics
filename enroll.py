@@ -71,6 +71,7 @@ fall_20.columns = ['Course', '# of Sections', '# Enrolled']
 spring_16 = spring_16.drop(columns=['Unnamed: 3'])
 spring_16.dropna(inplace=True)
 fall_23 = pd.read_csv('datasets/fall_23.csv')
+spring_24 = pd.read_csv('datasets/spring_2024.csv')
 
 
 # CLASS
@@ -120,6 +121,8 @@ spring_2020 = DataFramer('2020s', spring_20)
 spring_2021 = DataFramer('2021s', spring_21)
 spring_2022 = DataFramer('2022s', spring_22)
 spring_2023 = DataFramer('2023s', spring_23)
+spring_2024 = DataFramer('2024s', spring_24)
+
 
 fall_2003 = DataFramer('2003f', fall_03)
 fall_2004 = DataFramer('2004f', fall_04)
@@ -164,7 +167,8 @@ totals_enrolled = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_name(), fall_2020.get_name(),
                                             spring_2021.get_name(), fall_2021.get_name(),
                                             spring_2022.get_name(), fall_2022.get_name(),
-                                            spring_2023.get_name(), fall_2023.get_name()],
+                                            spring_2023.get_name(), fall_2023.get_name(),
+                                            spring_2024.get_name()],
                                 'ACL': [spring_2003.get_course('ACR')['# Enrolled'].sum(), fall_2003.get_course('ACR')['# Enrolled'].sum(),
                                             spring_2004.get_course('ACR')['# Enrolled'].sum(), fall_2004.get_course('ACR')['# Enrolled'].sum(),
                                             spring_2005.get_course('ACR')['# Enrolled'].sum(), fall_2005.get_course('ACR')['# Enrolled'].sum(),
@@ -186,7 +190,8 @@ totals_enrolled = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('ACR')['# Enrolled'].sum(), fall_2020.get_course('ACR')['# Enrolled'].sum(),
                                             spring_2021.get_course('ACR')['# Enrolled'].sum(), fall_2021.get_course('ACR')['# Enrolled'].sum(),
                                             spring_2022.get_course('ACR')['# Enrolled'].sum(), fall_2022.get_course('ACR')['# Enrolled'].sum(),
-                                            spring_2023.get_course('ACL')['# Enrolled'].sum(), fall_2023.get_course('ACL')['# Enrolled'].sum()],
+                                            spring_2023.get_course('ACL')['# Enrolled'].sum(), fall_2023.get_course('ACL')['# Enrolled'].sum(),
+                                            spring_2024.get_course('ACL')['# Enrolled'].sum()],
                                   'CRT': [spring_2003.get_course('CRT')['# Enrolled'].sum(), fall_2003.get_course('CRT')['# Enrolled'].sum(),
                                             spring_2004.get_course('CRT')['# Enrolled'].sum(), fall_2004.get_course('CRT')['# Enrolled'].sum(),
                                             spring_2005.get_course('CRT')['# Enrolled'].sum(), fall_2005.get_course('CRT')['# Enrolled'].sum(),
@@ -208,7 +213,8 @@ totals_enrolled = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('CRT')['# Enrolled'].sum(), fall_2020.get_course('CRT')['# Enrolled'].sum(),
                                             spring_2021.get_course('CRT')['# Enrolled'].sum(), fall_2021.get_course('CRT')['# Enrolled'].sum(),
                                             spring_2022.get_course('CRT')['# Enrolled'].sum(), fall_2022.get_course('CRT')['# Enrolled'].sum(),
-                                            spring_2023.get_course('CRT')['# Enrolled'].sum(), fall_2023.get_course('CRT')['# Enrolled'].sum()],
+                                            spring_2023.get_course('CRT')['# Enrolled'].sum(), fall_2023.get_course('CRT')['# Enrolled'].sum(),
+                                            spring_2024.get_course('CRT')['# Enrolled'].sum()],
                                   'ESL': [spring_2003.get_course('ESL')['# Enrolled'].sum(), fall_2003.get_course('ESL')['# Enrolled'].sum(),
                                             spring_2004.get_course('ESL')['# Enrolled'].sum(), fall_2004.get_course('ESL')['# Enrolled'].sum(),
                                             spring_2005.get_course('ESL')['# Enrolled'].sum(), fall_2005.get_course('ESL')['# Enrolled'].sum(),
@@ -230,7 +236,8 @@ totals_enrolled = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('ESL')['# Enrolled'].sum(), fall_2020.get_course('ESL')['# Enrolled'].sum(),
                                             spring_2021.get_course('ESL')['# Enrolled'].sum(), fall_2021.get_course('ESL')['# Enrolled'].sum(),
                                             spring_2022.get_course('ESL')['# Enrolled'].sum(), fall_2022.get_course('ESL')['# Enrolled'].sum(),
-                                            spring_2023.get_course('ESL')['# Enrolled'].sum(), fall_2023.get_course('ESL')['# Enrolled'].sum()],
+                                            spring_2023.get_course('ESL')['# Enrolled'].sum(), fall_2023.get_course('ESL')['# Enrolled'].sum(),
+                                            spring_2024.get_course('ESL')['# Enrolled'].sum()],
                                   'LIN': [spring_2003.get_course('LIN')['# Enrolled'].sum(), fall_2003.get_course('LIN')['# Enrolled'].sum(),
                                             spring_2004.get_course('LIN')['# Enrolled'].sum(), fall_2004.get_course('LIN')['# Enrolled'].sum(),
                                             spring_2005.get_course('LIN')['# Enrolled'].sum(), fall_2005.get_course('LIN')['# Enrolled'].sum(),
@@ -252,7 +259,8 @@ totals_enrolled = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('LIN')['# Enrolled'].sum(), fall_2020.get_course('LIN')['# Enrolled'].sum(),
                                             spring_2021.get_course('LIN')['# Enrolled'].sum(), fall_2021.get_course('LIN')['# Enrolled'].sum(),
                                             spring_2022.get_course('LIN')['# Enrolled'].sum(), fall_2022.get_course('LIN')['# Enrolled'].sum(),
-                                            spring_2023.get_course('LIN')['# Enrolled'].sum(), fall_2023.get_course('LIN')['# Enrolled'].sum()]
+                                            spring_2023.get_course('LIN')['# Enrolled'].sum(), fall_2023.get_course('LIN')['# Enrolled'].sum(),
+                                            spring_2024.get_course('LIN')['# Enrolled'].sum()]
                                 })
 
 totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.get_name(),
@@ -276,7 +284,8 @@ totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_name(), fall_2020.get_name(),
                                             spring_2021.get_name(), fall_2021.get_name(),
                                             spring_2022.get_name(), fall_2022.get_name(),
-                                            spring_2023.get_name(), fall_2023.get_name()],
+                                            spring_2023.get_name(), fall_2023.get_name(),
+                                            spring_2024.get_name()],
                                 'ACL': [spring_2003.get_course('ACR')['# of Sections'].sum(), fall_2003.get_course('ACR')['# of Sections'].sum(),
                                             spring_2004.get_course('ACR')['# of Sections'].sum(), fall_2004.get_course('ACR')['# of Sections'].sum(),
                                             spring_2005.get_course('ACR')['# of Sections'].sum(), fall_2005.get_course('ACR')['# of Sections'].sum(),
@@ -298,7 +307,8 @@ totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('ACR')['# of Sections'].sum(), fall_2020.get_course('ACR')['# of Sections'].sum(),
                                             spring_2021.get_course('ACR')['# of Sections'].sum(), fall_2021.get_course('ACR')['# of Sections'].sum(),
                                             spring_2022.get_course('ACR')['# of Sections'].sum(), fall_2022.get_course('ACR')['# of Sections'].sum(),
-                                            spring_2023.get_course('ACL')['# of Sections'].sum(), fall_2023.get_course('ACL')['# of Sections'].sum()],
+                                            spring_2023.get_course('ACL')['# of Sections'].sum(), fall_2023.get_course('ACL')['# of Sections'].sum(),
+                                            spring_2024.get_course('ACL')['# of Sections'].sum()],
                                   'CRT': [spring_2003.get_course('CRT')['# of Sections'].sum(), fall_2003.get_course('CRT')['# of Sections'].sum(),
                                             spring_2004.get_course('CRT')['# of Sections'].sum(), fall_2004.get_course('CRT')['# of Sections'].sum(),
                                             spring_2005.get_course('CRT')['# of Sections'].sum(), fall_2005.get_course('CRT')['# of Sections'].sum(),
@@ -320,7 +330,8 @@ totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('CRT')['# of Sections'].sum(), fall_2020.get_course('CRT')['# of Sections'].sum(),
                                             spring_2021.get_course('CRT')['# of Sections'].sum(), fall_2021.get_course('CRT')['# of Sections'].sum(),
                                             spring_2022.get_course('CRT')['# of Sections'].sum(), fall_2022.get_course('CRT')['# of Sections'].sum(),
-                                            spring_2023.get_course('CRT')['# of Sections'].sum(), fall_2023.get_course('CRT')['# of Sections'].sum()],
+                                            spring_2023.get_course('CRT')['# of Sections'].sum(), fall_2023.get_course('CRT')['# of Sections'].sum(),
+                                            spring_2024.get_course('CRT')['# of Sections'].sum()],
                                   'ESL': [spring_2003.get_course('ESL')['# of Sections'].sum(), fall_2003.get_course('ESL')['# of Sections'].sum(),
                                             spring_2004.get_course('ESL')['# of Sections'].sum(), fall_2004.get_course('ESL')['# of Sections'].sum(),
                                             spring_2005.get_course('ESL')['# of Sections'].sum(), fall_2005.get_course('ESL')['# of Sections'].sum(),
@@ -342,7 +353,8 @@ totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('ESL')['# of Sections'].sum(), fall_2020.get_course('ESL')['# of Sections'].sum(),
                                             spring_2021.get_course('ESL')['# of Sections'].sum(), fall_2021.get_course('ESL')['# of Sections'].sum(),
                                             spring_2022.get_course('ESL')['# of Sections'].sum(), fall_2022.get_course('ESL')['# of Sections'].sum(),
-                                            spring_2023.get_course('ESL')['# of Sections'].sum(), fall_2023.get_course('ESL')['# of Sections'].sum()],
+                                            spring_2023.get_course('ESL')['# of Sections'].sum(), fall_2023.get_course('ESL')['# of Sections'].sum(),
+                                            spring_2024.get_course('ESL')['# of Sections'].sum()],
                                   'LIN': [spring_2003.get_course('LIN')['# of Sections'].sum(), fall_2003.get_course('LIN')['# of Sections'].sum(),
                                             spring_2004.get_course('LIN')['# of Sections'].sum(), fall_2004.get_course('LIN')['# of Sections'].sum(),
                                             spring_2005.get_course('LIN')['# of Sections'].sum(), fall_2005.get_course('LIN')['# of Sections'].sum(),
@@ -364,7 +376,8 @@ totals_sections = pd.DataFrame({'Semester': [spring_2003.get_name(), fall_2003.g
                                             spring_2020.get_course('LIN')['# of Sections'].sum(), fall_2020.get_course('LIN')['# of Sections'].sum(),
                                             spring_2021.get_course('LIN')['# of Sections'].sum(), fall_2021.get_course('LIN')['# of Sections'].sum(),
                                             spring_2022.get_course('LIN')['# of Sections'].sum(), fall_2022.get_course('LIN')['# of Sections'].sum(),
-                                            spring_2023.get_course('LIN')['# of Sections'].sum(), fall_2023.get_course('LIN')['# of Sections'].sum()]
+                                            spring_2023.get_course('LIN')['# of Sections'].sum(), fall_2023.get_course('LIN')['# of Sections'].sum(),
+                                            spring_2024.get_course('LIN')['# of Sections'].sum()]
                                 })
 
 # MAIN CONTENT      
@@ -389,23 +402,23 @@ with st.container():
              
     with col2:   
         
-        st.metric(label='Total enrollment', value=2057, delta='+425')                           
+        st.metric(label='Total enrollment', value=2111, delta='+54')                           
         
     with col3:
-         st.metric(label='Total sections', value=136, delta='+4')
+         st.metric(label='Total sections', value=214, delta='+78')
          
     with col4:
-         st.metric(label='Sections cancelled', value=87, delta='-33')
+         st.metric(label='Sections cancelled', value=75, delta='-12')
          
     with col5:
-         st.metric(label='Teaching faculty', value=47, delta='-2')
+         st.metric(label='Teaching faculty', value=46, delta='-1')
     
     
          
 # SECOND LINE
  
 with st.container():
-    st.markdown('## Overwiew - Fall 2023')  
+    st.markdown('## Overwiew - Spring 2024')  
    
     col1, col2 = st.columns(2)
  
@@ -501,14 +514,16 @@ with st.container():
     st.markdown('## Components')
     tab1, tab2, tab3, tab4 = st.tabs(['ACL', 'CRT', 'ESL', 'LIN'])
     
+    # ACL
+    
     with tab1:
         col1, col2, col3 = st.columns((2,2,2))
         
         with col1:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('ACL')['Course']),
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('ACL')['Course']),
                                 range=['#003264', '#004e8a', '#005e9b', '#0071ae', '#0084c2'])
 
-            chart = alt.Chart(fall_2023.get_course('ACL')).mark_bar(
+            chart = alt.Chart(spring_2024.get_course('ACL')).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -517,7 +532,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Enrollment in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Enrollment in Spring 2024', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Enrollment Count')
@@ -525,10 +540,10 @@ with st.container():
             
             
         with col2:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('ACL')['Course']),
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('ACL')['Course']),
                                 range=['#FF7F00', '#FF914D', '#FFA07A', '#FFB6C1', '#FFC0CB'])
 
-            chart = alt.Chart(fall_2023.get_course('ACL')).mark_bar(
+            chart = alt.Chart(spring_2024.get_course('ACL')).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -537,7 +552,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Course Sections in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Course Sections in Spring 2024', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Section Count')
@@ -547,14 +562,14 @@ with st.container():
 
         with col3:
             comparison0 = pd.DataFrame({'Course': spring_2023.get_course('ACL')['Course'],
-                           'Spring 2023': [0,5,0,0,0],
-                           'Fall 2023': list(fall_2023.get_course('ACL')['# Enrolled'])})
+                           'Spring 2023': [2,3,53,20,24],
+                           'Spring 2024': list(spring_2024.get_course('ACL')['# Enrolled'])})
             melted_df0 = pd.melt(comparison0, id_vars='Course', var_name='Semester', value_name='# Enrolled')
             custom_color_scheme = alt.Scale(domain=list(comparison0['Course']),
                                 range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB'])
             
             chart = alt.Chart(melted_df0).mark_line().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # Added sort parameter here
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Spring 2024']),  # Added sort parameter here
                 y='# Enrolled', 
                 color=alt.Color('Course', scale=custom_color_scheme)
             ) + alt.Chart(melted_df0).mark_point().encode(
@@ -572,34 +587,53 @@ with st.container():
             st.altair_chart(chart, use_container_width=True)
             
     with tab2:
-                
+        
+        # CRT
+        
         col1, col2, col3 = st.columns((2,2,2))
         
         with col1:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('CRT')['Course']),
-                                range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB', '#4BA3FF', '#9ACFFF'])
+            # Assuming spring_2024.get_course('CRT') returns a DataFrame
+            df_crt = spring_2024.get_course('CRT')
 
-            chart = alt.Chart(fall_2023.get_course('CRT')).mark_bar(
+            # Filter out courses with zero enrollment
+            df_crt_filtered = df_crt[df_crt['# Enrolled'] > 0]
+
+            # Define custom color scheme
+            custom_color_scheme = alt.Scale(
+                domain=list(df_crt_filtered['Course']),
+                range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB', '#4BA3FF', '#9ACFFF']
+            )
+
+            # Create the chart
+            chart = alt.Chart(df_crt_filtered).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
                 x='Course',
                 y='# Enrolled',
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
+            ).properties(
+                title=alt.TitleParams(
+                    text='Enrollment in Spring 2024 by course', 
+                    align='left', 
+                    fontSize=16, 
+                    fontWeight='bold', 
+                    color='#003264'
+                )
+            ).configure_axis(
+                labelAngle=0, 
+                title='Enrollment Count'
             )
-            
-            title = alt.TitleParams(text='Enrollment in Fall 2023 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
-            chart = chart.properties(title=title)
-            chart = chart.configure_axis(labelAngle=-0, title='Enrollment Count')
             st.altair_chart(chart, use_container_width=True)
             
             
         with col2:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('CRT')['Course']),
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('CRT')['Course']),
                                 range=['#FF7F00', '#FF914D', '#FFA07A', '#FFB6C1', '#FFC0CB', '#F2DFFF', '#E1E1FF'])
 
-            chart = alt.Chart(fall_2023.get_course('CRT')).mark_bar(
+            chart = alt.Chart(spring_2024.get_course('CRT')).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -608,7 +642,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Course sections in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Course sections in Spring 2024', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Section Count')
@@ -617,24 +651,33 @@ with st.container():
             st.altair_chart(chart, use_container_width=True)
 
         with col3:
-            custom_order = ['CRT 100', 'CRT 100.5', 'CRT 100.6', 'CRT 120', 'CRT 150', 'CRT 196',  'CRT 100H']
-            new = fall_2023.get_course('CRT')['# Enrolled'].reindex(index=custom_order) 
-            new = fall_2023.get_course('CRT')['# Enrolled']
+            courses_of_interest = ["CRT 100", "CRT 120", "CRT 245", "CRT 100H"]
+
+            spring_2023_crt = spring_2023.get_course('CRT')
+            spring_2024_crt = spring_2024.get_course('CRT')
+
+            spring_2023_crt_filtered = spring_2023_crt[spring_2023_crt['Course'].isin(courses_of_interest)]
+            spring_2024_crt_filtered = spring_2024_crt[spring_2024_crt['Course'].isin(courses_of_interest)]
+
+
+            # Create a DataFrame for comparison
+            comparison0 = pd.DataFrame({
+                'Course': courses_of_interest,
+                'Spring 2023': spring_2023_crt_filtered['# Enrolled'],
+                'Spring 2024': [584, 21, 21, 19]
+            })
+
             
-            comparison = pd.DataFrame({'Course': spring_2023.get_course('CRT')['Course'],
-                           'Spring 2023': list(spring_2023.get_course('CRT')['# Enrolled']), 'Fall 2023': new})
-            melted_df = pd.melt(comparison, id_vars='Course', var_name='Semester', value_name='# Enrolled')
+            melted_df0 = pd.melt(comparison0, id_vars='Course', var_name='Semester', value_name='# Enrolled')
+            custom_color_scheme = alt.Scale(domain=list(comparison0['Course']),
+                                range=['#003264', '#00487C', '#005B94', '#006EBD'])
             
-            custom_color_scheme = alt.Scale(domain=list(comparison['Course']),
-                                range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB', '#4BA3FF', '#9ACFFF'])
-            
-            
-            chart = alt.Chart(melted_df).mark_line().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # Added sort parameter here
+            chart = alt.Chart(melted_df0).mark_line().encode(
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Spring 2024']),  # Added sort parameter here
                 y='# Enrolled', 
                 color=alt.Color('Course', scale=custom_color_scheme)
-            ) + alt.Chart(melted_df).mark_point().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # And here
+            ) + alt.Chart(melted_df0).mark_point().encode(
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  
                 y='# Enrolled',
                 color='Course'
             )
@@ -644,18 +687,20 @@ with st.container():
             
             chart = chart.configure_axis(labelAngle=-0, title='')
             chart = chart.properties(title=title)
-                       
+            
             st.altair_chart(chart, use_container_width=True)
 
     with tab3:
-                
+        
+        # ESL 
+        
         col1, col2, col3 = st.columns((2,2,2))
         
         with col1:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('ESL')['Course']),
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('ESL')['Course']),
                                 range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB', '#4BA3FF', '#9ACFFF'])
 
-            chart = alt.Chart(fall_2023.get_course('ESL')).mark_bar(
+            chart = alt.Chart(spring_2024.get_course('ESL')).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -664,7 +709,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Enrollment in Fall 2023 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Enrollment in Spring 2024 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Enrollment Count')
@@ -672,10 +717,10 @@ with st.container():
             
             
         with col2:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('ESL')['Course']),
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('ESL')['Course']),
                                 range=['#FF7F00', '#FF914D', '#FFA07A', '#FFB6C1', '#FFC0CB', '#F2DFFF', '#E1E1FF'])
 
-            chart = alt.Chart(fall_2023.get_course('ESL')).mark_bar(
+            chart = alt.Chart(spring_2024.get_course('ESL')).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -684,7 +729,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Course sections in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Course sections in Spring 2024', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Section Count')
@@ -693,20 +738,20 @@ with st.container():
             st.altair_chart(chart, use_container_width=True)      
         
         with col3:
-            comparison2 = pd.DataFrame({'Course': fall_2023.get_course('ESL')['Course'],
-                            'Fall 2023': list(fall_2023.get_course('ESL')['# Enrolled']),
-                           'Spring 2023': list(spring_2023.get_course('ESL')['# Enrolled'])})
+            comparison2 = pd.DataFrame({'Course': spring_2024.get_course('ESL')['Course'],
+                           'Spring 2023': list(spring_2023.get_course('ESL')['# Enrolled']), 
+                           'Spring 2024': list(spring_2024.get_course('ESL')['# Enrolled'])})
             
             melted_df2 = pd.melt(comparison2, id_vars='Course', var_name='Semester', value_name='# Enrolled')
             custom_color_scheme = alt.Scale(domain=list(comparison2['Course']),
                                 range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB', '#4BA3FF'])
             
             chart = alt.Chart(melted_df2).mark_line().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # Added sort parameter here
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Spring 2024']),  # Added sort parameter here
                 y='# Enrolled', 
                 color=alt.Color('Course', scale=custom_color_scheme)
             ) + alt.Chart(melted_df2).mark_point().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # And here
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Spring 2024']),  # And here
                 y='# Enrolled',
                 color='Course'
             )
@@ -720,14 +765,20 @@ with st.container():
             st.altair_chart(chart, use_container_width=True)
             
     with tab4:
-                
+       
+       # LIN         
         col1, col2, col3 = st.columns((2,2,2))
         
         with col1:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('LIN')['Course']),
+            spring_2024_lin = spring_2024.get_course('LIN')
+
+            # Filter out courses with 0 enrollment
+            spring_2024_lin_filtered = spring_2024_lin[spring_2024_lin['# Enrolled'] > 0]
+            
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('LIN')['Course']),
                                 range=['#003264', '#00487C', '#005B94', '#006EBD', '#007DDB', '#4BA3FF', '#9ACFFF'])
 
-            chart = alt.Chart(fall_2023.get_course('LIN')).mark_bar(
+            chart = alt.Chart(spring_2024_lin_filtered).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -736,7 +787,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Enrollment in Fall 2023 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Enrollment in Spring 2024 by course', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Enrollment Count')
@@ -744,11 +795,12 @@ with st.container():
             
             
         with col2:
-            custom_color_scheme = alt.Scale(domain=list(fall_2023.get_course('LIN')['Course']),
+            
+            custom_color_scheme = alt.Scale(domain=list(spring_2024.get_course('LIN')['Course']),
                                 range=['#FF7F00', '#FF914D', '#FFA07A', '#FFB6C1', '#FFC0CB', '#F2DFFF', '#E1E1FF', '#D0D0FF', '#BEBEFF', '#ACACFF', '#9A9AFF', '#8888FF', '#7676FF'
 ])
 
-            chart = alt.Chart(fall_2023.get_course('LIN')).mark_bar(
+            chart = alt.Chart(spring_2024.get_course('LIN')).mark_bar(
                 cornerRadiusTopLeft=3,
                 cornerRadiusTopRight=3
             ).encode(
@@ -757,7 +809,7 @@ with st.container():
                 color=alt.Color('Course', scale=custom_color_scheme, legend=None)
             )
             
-            title = alt.TitleParams(text='Course sections in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Course sections in Spring 2024', align='left', fontSize=16, fontWeight='bold', color='#003264')
 
             chart = chart.properties(title=title)
             chart = chart.configure_axis(labelAngle=-0, title='Section Count')
@@ -766,16 +818,16 @@ with st.container():
             st.altair_chart(chart, use_container_width=True)      
          
         with col3:
+            courses = ['LIN 100', 'LIN 101', 'LIN 110', 'LIN 125', 'LIN 140',
+                       'LIN 150', 'LIN 250']
             
-            common_courses = set(fall_2023.get_course('LIN')['Course']).intersection(set(spring_2023.get_course('LIN')['Course']))
-
-            fall_common = fall_2023.get_course('LIN')[fall_2023.get_course('LIN')['Course'].isin(common_courses)].reset_index(drop=True)
-            spring_common = spring_2023.get_course('LIN')[spring_2023.get_course('LIN')['Course'].isin(common_courses)].reset_index(drop=True)
+            spring_24_common = spring_2024.get_course('LIN')[spring_2024.get_course('LIN')['Course'].isin(courses)]
+            spring_23_common = spring_2023.get_course('LIN')[spring_2023.get_course('LIN')['Course'].isin(courses)]
 
             comparison3 = pd.DataFrame({
-                'Course': fall_common['Course'],
-                'Fall 2023': fall_common['# Enrolled'],
-                'Spring 2023': spring_common['# Enrolled']
+                'Course': courses,
+                'Spring 2023': spring_23_common['# Enrolled'],
+                'Spring 2024': [100, 48, 17, 2, 35, 158, 153]
             })
             
             melted_df3 = pd.melt(comparison3, id_vars='Course', var_name='Semester', value_name='# Enrolled')
@@ -784,17 +836,17 @@ with st.container():
 )
              
             chart = alt.Chart(melted_df3).mark_line().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # Added sort parameter here
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Spring 2024']),  # Added sort parameter here
                 y='# Enrolled', 
                 color=alt.Color('Course', scale=custom_color_scheme)
             ) + alt.Chart(melted_df3).mark_point().encode(
-                x=alt.X('Semester:O', sort=['Spring 2023', 'Fall 2023']),  # And here
+                x=alt.X('Semester:O', sort=['Spring 2023', 'Spring 2024']),  # And here
                 y='# Enrolled',
                 color='Course'
             )
 
             
-            title = alt.TitleParams(text='Enrollment comparison with Spring 2022', align='left', fontSize=16, fontWeight='bold', color='#003264')
+            title = alt.TitleParams(text='Enrollment comparison with Spring 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
             
             chart = chart.configure_axis(labelAngle=-0, title='')
             chart = chart.properties(title=title)
@@ -806,106 +858,86 @@ with st.container():
 with st.container():
     st.markdown('## Classes')
     
-    col1, col2, col3 = st.columns((2,2,1))
+    col1, col2, col3 = st.columns((3))
     
     with col1:
         def class_heatmap(df):
-            # Filter out rows where 'Days' or 'Mtg Start' is NaN
-            times = df[df[['Days', 'Mtg Start']].notna().all(axis=1)]
+            # Filter rows where 'Days', 'Mtg Start', and 'Mtg End' are not NaN
+            df_filtered = df.dropna(subset=['Days', 'Mtg Start', 'Mtg End'])
 
-            try:
-                # Convert to datetime with explicit format
-                times.loc[:, 'Mtg Start'] = pd.to_datetime(times['Mtg Start'], format='%I:%M%p')
-                times.loc[:, 'Mtg End'] = pd.to_datetime(times['Mtg End'], format='%I:%M%p')
-                
-                # Convert datetime back to string in the 24-hour format
-                times.loc[:, 'Mtg Start'] = times['Mtg Start'].dt.strftime('%H:%M')
-                times.loc[:, 'Mtg End'] = times['Mtg End'].dt.strftime('%H:%M')
-            except Exception as e:
-                print(f"Error encountered: {e}")
-                print("Problematic 'Mtg Start' values:")
-                print(times.loc[pd.to_datetime(times['Mtg Start'], errors='coerce').isna(), 'Mtg Start'])
-                print("Problematic 'Mtg End' values:")
-                print(times.loc[pd.to_datetime(times['Mtg End'], errors='coerce').isna(), 'Mtg End'])
+            # Convert 'Mtg Start' and 'Mtg End' to 24-hour format
+            df_filtered['Mtg Start'] = pd.to_datetime(df_filtered['Mtg Start'], format='%I:%M:%S %p').dt.strftime('%H:%M')
+            df_filtered['Mtg End'] = pd.to_datetime(df_filtered['Mtg End'], format='%I:%M:%S %p').dt.strftime('%H:%M')
 
-            
-            day_dict = {
-            'M': 'Monday',
-            'Tu': 'Tuesday',
-            'MW': 'Monday, Wednesday',
-            'MTh': 'Monday, Thursday',
-            'TuTh': 'Tuesday, Thursday',
-            'TuF': 'Tuesday, Friday',
-            'MTuWTh': 'Monday, Tuesday, Wednesday, Thursday',
-            'MWTh': 'Monday, Wednesday, Thursday',
-            'MTuTh': 'Monday, Tuesday, Thursday',
-            'TuW': 'Tuesday, Wednesday',
-            'W': 'Wednesday',
-            'Th': 'Thursday',
-            'F': 'Friday',
-            'Sa': 'Saturday',
-            'Su': 'Sunday'}
-            
-            def convert_days(days):
-                output_days = []
-                for day in days.split(','):
-                    if day.strip() in day_dict:
-                        output_days.append(day_dict[day.strip()])
-                return output_days
-            
-            times['Day'] = times['Days'].apply(convert_days).apply(', '.join)
-            times = times.assign(Day=times.Day.str.split(","))
-            times = times.explode('Day')
-            
-            day_df = times[['Mtg Start', 'Mtg End', 'Day']]
-            
-            stacked_days = pd.concat([day_df[day_df['Day']=='Monday'], 
-                                day_df[day_df['Day']=='Tuesday'], 
-                                day_df[day_df['Day']=='Wednesday'], 
-                                day_df[day_df['Day']=='Thursday'],
-                                day_df[day_df['Day']=='Friday'],
-                                day_df[day_df['Day']=='Saturday'],
-                                day_df[day_df['Day']=='Sunday']],
-                                axis=0)
-            
-            stacked_days['Mtg Start'] = stacked_days['Mtg Start'].astype(str)
-            stacked_days['Mtg End'] = stacked_days['Mtg End'].astype(str)
+            # Expand 'Days' into separate rows
+            days_mapping = {
+                'M': 'Mon',
+                'Tu': 'Tue',
+                'W': 'Wed',
+                'Th': 'Thu',
+                'F': 'Fri',
+                'Sa': 'Sat',
+                'Su': 'Sun'
+            }
 
-            df_pivot = stacked_days.pivot_table(index='Day', columns=['Mtg Start', 'Mtg End'], aggfunc=len, fill_value=0)
+            # Function to expand days
+            def expand_days(row):
+                expanded_days = []
+                for key, value in days_mapping.items():
+                    if key in row['Days']:
+                        expanded_days.append(value)
+                return expanded_days
 
-            df_pivot_long = df_pivot.reset_index().melt(id_vars=['Day'], var_name=['Mtg Start', 'Mtg End'], value_name='Count')
-            
-            df_pivot_long['Mtg Start'] = pd.to_datetime(df_pivot_long['Mtg Start']).dt.strftime('%H:%M')
+            # Apply function and explode into separate rows
+            df_filtered['Expanded Days'] = df_filtered.apply(expand_days, axis=1)
+            df_exploded = df_filtered.explode('Expanded Days')
 
-            ticks = list(df_pivot_long['Mtg Start'].unique())
-            
-            chart = alt.Chart(df_pivot_long).mark_rect().encode(
-                y=alt.Y('Mtg Start:O', title='Class start time', scale=alt.Scale(domain=ticks)),  # Explicitly set the domain using the cleaned-up ticks
-                x=alt.X('Day:O', sort=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']),
-                color=alt.Color('Count:Q', title='# of class meetings', scale=alt.Scale(scheme='blues'), legend=None),
-                #tooltip=[alt.Tooltip('Count:Q', title='# of class meetings')]
+            # Create a 'Time Slot' column combining 'Mtg Start' and 'Mtg End'
+            df_exploded['Time Slot'] = df_exploded['Mtg Start'] + '-' + df_exploded['Mtg End']
+
+            # Aggregate data to count the number of classes in each time slot for each day
+            df_aggregated = df_exploded.groupby(['Expanded Days', 'Time Slot']).size().reset_index(name='Count')
+
+            days_order = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+            # Creating the heatmap
+            heatmap = alt.Chart(df_aggregated).mark_rect().encode(
+                x=alt.X('Expanded Days:O', sort=days_order, title=None, axis=alt.Axis(labelAngle=0)),
+                y=alt.Y('Time Slot:O', title=None),
+                color=alt.Color('Count:Q', scale=alt.Scale(scheme='blues'), legend=None, title='Number of Classes'),
+                tooltip=[alt.Tooltip('Count:Q', title='Number of Classes'), 'Time Slot', 'Expanded Days']
             ).properties(
+                title=alt.TitleParams(
+                text='Class Times in Spring 2024', 
+                align='left', 
+                fontSize=16, 
+                fontWeight='bold', 
+                color='#003264'
+            ),
                 width=400,
                 height=400
             )
-            
-            title = alt.TitleParams(text='Class meetings time of the day in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
-            chart = chart.properties(title=title)
-            chart = chart.configure_axis(labelAngle=-0, title='')
 
-          
-            st.altair_chart(chart, use_container_width=True) 
+            st.altair_chart(heatmap, use_container_width=True) 
             
-        query_23 = pd.read_csv('datasets/FALL-2023-QUERY.csv', header=1)
+        query_24 = pd.read_csv('datasets/spring_24_query.csv', header=0)
         
-        class_heatmap(query_23)
+        class_heatmap(query_24) 
         
     with col2:
-        query = pd.read_csv('datasets/FALL-2023-QUERY.csv', header=1).fillna(0)
-        where = query[['Subject', 'Room']]
-        where_df = where[where['Room'] != 0]
+        # Read the CSV file and check the headers
+        query = pd.read_csv('datasets/spring_24_query.csv').fillna(0)  # Assuming the first row is the header
+
+        # Validate that 'Subject' and 'Room' are in the DataFrame columns
+        if 'Subject' not in query.columns or 'Room' not in query.columns:
+            st.error("DataFrame is missing one or more required columns: 'Subject' or 'Room'")
+            st.stop()
+
+        where_df = query[['Subject', 'Room']]
+        where_df = where_df[where_df['Room'] != 0]
 
         def where(df):
+            df = df.copy()
             where = df[['Subject', 'Room']]
             where.columns = ['Course', 'Room']
             where.loc[where['Room'].str.contains('OL-02'), 'Room'] = 'Online-async'
@@ -931,35 +963,43 @@ with st.container():
                 width=300, height = 400
             )
                         
-        title = alt.TitleParams(text='Class mode and location in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
+        title = alt.TitleParams(text='Class mode and location in Spring 2024', align='left', fontSize=16, fontWeight='bold', color='#003264')
         chart = chart.properties(title=title)
         chart = chart.configure_axis(labelAngle=-0, title='')
         
         st.altair_chart(chart, use_container_width=True) 
         
     with col3:
-        status = pd.read_csv('datasets/FALL-2023-QUERY.csv', header=1)
+        status = pd.read_csv('datasets/spring_24_query.csv', header=0)
+        
+        # Assuming this DataFrame has columns named 'Class Stat' and 'Subject'
         status = status[['Class Stat', 'Subject']]
         status.columns = ['Status', 'Course Group']
-        status_pivot = status.pivot_table(index='Status', columns='Course Group', aggfunc=len)
-        status_pivot.fillna(0, inplace=True)
-        source = pd.DataFrame({'Course Group': ['ACL', 'CRT', 'ESL', 'LIN'], 'Cancelled': status_pivot.iloc[1]})
 
-        custom_color_scale = alt.Scale(
-            domain=['ACL', 'CRT', 'ESL', 'LIN'],
-            range=[ '#023e8a', '#48cae4', '#03045e', '#219ebc', '#8ecae6'])
+        # Filter for cancelled classes
+        cancelled_classes = status[status['Status'] == 'Cancelled']
 
-        
-        chart = alt.Chart(source).mark_bar().encode(
-            x=alt.X('Course Group'),
-            y=alt.Y('Cancelled', stack=True), color=alt.Color('Course Group', scale=custom_color_scale, legend=None)
-            ).properties(
-               height = 400
-            )
-                        
-        title = alt.TitleParams(text='Section cancellations in Fall 2023', align='left', fontSize=16, fontWeight='bold', color='#003264')
-        chart = chart.properties(title=title)
-        
-        chart = chart.configure_axis(labelAngle=-0, title='')
+        # Correctly group by 'Course Group' to get the count of cancelled classes per course group
+        cancelled_summary = cancelled_classes.groupby('Course Group').size().reset_index(name='Count')
+
+        # Construct the chart with corrected data
+        chart = alt.Chart(cancelled_summary).mark_bar().encode(
+            x=alt.X('Course Group:N', title=None, axis=alt.Axis(labelAngle=0)),
+            y=alt.Y('Count:Q', title=None),
+            color=alt.Color('Course Group:N', scale=custom_color_scale, legend=None)
+        ).properties(
+            title=alt.TitleParams(
+                text='# of Cancelled Classes in Spring 2024', 
+                align='left', 
+                fontSize=16, 
+                fontWeight='bold', 
+                color='#003264'
+            ),
+            width=400,
+            height=400
+        )
+
+        chart = chart.configure_axis(labelFontSize=12, titleFontSize=14)
+        chart = chart.configure_title(fontSize=16)
 
         st.altair_chart(chart, use_container_width=True)

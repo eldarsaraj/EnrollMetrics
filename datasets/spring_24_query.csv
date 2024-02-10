@@ -1,0 +1,215 @@
+Session,Class Stat,Subject,Catalog#,Section,Class Title,Enrl Cap,Tot Enrl,Days,Mtg Start,Mtg End,Room,Instr Name,Instr EmplID,Instruction Mode
+1,Active,ACL, 120,050W,Reading for Justice and Law,25,17,,,,OL-02,"Dunphy Gregoire,Megan Christine",23009987,Online Asynchronous
+1,Active,ACL, 150,0500,Literacy in American Society,25,25,,,,OL-02,"Michel,James",23048042,Online Asynchronous
+1,Active,ACL, 150,050W,Literacy in American Society,25,25,,,,OL-02,"Flink,Patrick",23597624,Online Asynchronous
+1,Active,ACL, 150,0800,Literacy in American Society,25,16,MW,8:30:00 AM,9:45:00 AM,OL-03,"Rajkumar,Tajpertab",10838909,Online Synchronous
+1,Active,ACL, 150,0900,Literacy in American Society,25,13,Th,9:00:00 AM,11:45:00 AM,OL-03,"Rajkumar,Tajpertab",10838909,Online Synchronous
+1,Active,ACL, 150,1100,Literacy in American Society,19,16,W,11:00:00 AM,1:45:00 PM,MC-N470,"Michel,James",23048042,In Person
+1,Active,ACL, 150,1200,Literacy in American Society,25,14,MW,12:30:00 PM,1:45:00 PM,OL-03,"Rajkumar,Tajpertab",10838909,Online Synchronous
+1,Active,ACL, 195,0500,"Literacy, Dev, and Soc Justice",25,25,,,,OL-02,"Leonard,Timothy J",23602368,Online Asynchronous
+1,Active,ACL, 195,050W,"Literacy, Dev, and Soc Justice",25,19,,,,OL-02,"Kelley,Brian",23483452,Online Asynchronous
+1,Active,ACL, 195,1200,"Literacy, Dev, and Soc Justice",25,9,Th,12:00:00 PM,2:45:00 PM,MC-N450,"Flink,Patrick",23597624,In Person
+1,Active,ACL, 200,0502,Literacy Practices:Birth-Adole,25,12,,,,OL-02,"Michel,James",23048042,Online Asynchronous
+1,Active,ACL, 200,050W,Literacy Practices:Birth-Adole,25,15,,,,OL-02,"Dunphy Gregoire,Megan Christine",23009987,Online Asynchronous
+1,Active,ACL, 200,1100,Literacy Practices:Birth-Adole,35,11,M,11:00:00 AM,1:45:00 PM,FH-403,"Leonard,Timothy J",23602368,In Person
+1,Active,CRT, 100,0500,Critical Thinking,25,21,,,,OL-02,"Sarajlic,Eldar",23230595,Online Asynchronous
+1,Active,CRT, 100,0501,Critical Thinking,25,15,,,,OL-02,"Robb,Elizabeth",23599952,Online Asynchronous
+1,Active,CRT, 100,0508,Critical Thinking,25,17,,,,OL-02,"Koch,William H.",23123568,Online Asynchronous
+1,Active,CRT, 100,051W,Critical Thinking,25,22,,,,OL-02,"Marcus,Matthew G",23001030,Online Asynchronous
+1,Active,CRT, 100,052W,Critical Thinking,25,18,,,,OL-02,"McConnell,Shane",23009416,Online Asynchronous
+1,Active,CRT, 100,053W,Critical Thinking,25,23,,,,OL-02,"Barnes,Ewa",23237747,Online Asynchronous
+1,Active,CRT, 100,0900,Critical Thinking,25,16,Sa,9:00:00 AM,11:45:00 AM,OL-03,"McConnell,Shane",23009416,Online Synchronous
+1,Active,CRT, 100,0902,Critical Thinking,30,14,W,9:00:00 AM,11:45:00 AM,FH-304,"Singh,Danesh Kumar",23848192,In Person
+1,Active,CRT, 100,0903,Critical Thinking,30,13,TuTh,9:00:00 AM,10:15:00 AM,FH-603,"Cotton,Kenneth",10846867,In Person
+1,Active,CRT, 100,1005,Critical Thinking,30,13,M,10:00:00 AM,12:45:00 PM,FH-206,"Cotton,Kenneth",10846867,In Person
+1,Active,CRT, 100,100W,Critical Thinking,25,23,MW,10:30:00 AM,11:45:00 AM,FH-505,"Marcus,Matthew G",23001030,In Person
+1,Active,CRT, 100,1102,Critical Thinking,30,30,TuTh,11:00:00 AM,12:15:00 PM,FH-505,"Barnes,Ewa",23237747,In Person
+1,Active,CRT, 100,1103,Critical Thinking,35,12,Th,11:00:00 AM,12:15:00 PM,MU-M314,"Dunphy Gregoire,Megan Christine",,In Person
+1,Active,CRT, 100,1103,Critical Thinking,35,12,Tu,11:00:00 AM,12:15:00 PM,MU-M306,"Dunphy Gregoire,Megan Christine",23009987,In Person
+1,Active,CRT, 100,110W,Critical Thinking,20,17,W,11:00:00 AM,1:45:00 PM,MC-N585,"Smith,Nicholas R",10862758,In Person
+1,Active,CRT, 100,111W,Critical Thinking,22,20,Tu,11:00:00 AM,1:45:00 PM,MC-N793,"Sarajlic,Eldar",23230595,In Person
+1,Active,CRT, 100,120W,Critical Thinking,23,17,F,12:00:00 PM,2:45:00 PM,MC-N582,"Smith,Nicholas R",10862758,In Person
+1,Active,CRT, 100,122W,Critical Thinking,25,20,MW,12:00:00 PM,1:15:00 PM,FH-505,"Marcus,Matthew G",23001030,In Person
+1,Active,CRT, 100,1300,Critical Thinking,25,19,M,1:00:00 PM,2:15:00 PM,OL-03,"Dunphy Gregoire,Megan Christine",23009987,Online Mix
+1,Active,CRT, 100,1300,Critical Thinking,25,19,,,,OL-02,"Dunphy Gregoire,Megan Christine",,Online Mix
+1,Active,CRT, 100,1501,Critical Thinking,29,13,TuTh,3:30:00 PM,4:45:00 PM,MU-M213,"Koch,William H.",23123568,In Person
+1,Active,CRT, 100,160W,Critical Thinking,25,14,W,4:00:00 PM,6:45:00 PM,MC-S739,"Koch,William H.",23123568,In Person
+1,Active,CRT, 100,171W,Critical Thinking,25,23,Tu,5:00:00 PM,7:45:00 PM,OL-03,"McConnell,Shane",23009416,Online Synchronous
+1,Active,CRT, 100,5001,Critical Thinking,25,15,W,5:30:00 PM,6:45:00 PM,OL-03,"Prager,Brian",10865090,Online Mix
+1,Active,CRT, 100,5001,Critical Thinking,25,15,,,,OL-02,"Prager,Brian",,Online Mix
+1,Active,CRT, 100.6,0500,Critical Thinking for ESL 95,25,25,,,,OL-02,"Singh,Danesh Kumar",23848192,Online Asynchronous
+1,Active,CRT, 100.6,0900,Critical Thinking for ESL 95,25,22,TuF,9:00:00 AM,11:45:00 AM,FH-903,"Comeau-Kirschner,Cheryl",10843941,In Person
+1,Active,CRT, 100.6,1000,Critical Thinking for ESL 95,25,24,F,10:00:00 AM,12:45:00 PM,FH-211,"Singh,Danesh Kumar",,In Person
+1,Active,CRT, 100.6,1000,Critical Thinking for ESL 95,25,24,Tu,10:00:00 AM,12:45:00 PM,FH-309,"Singh,Danesh Kumar",23848192,In Person
+1,Active,CRT, 100.6,1800,Critical Thinking for ESL 95,25,25,MW,6:00:00 PM,8:45:00 PM,OL-03,"Leibman,Allan J",10853012,Online Synchronous
+1,Active,CRT, 100H,050W,Critical Thinking (Honors),25,19,,,,OL-02,"Torres,Rosario",10837624,Online Asynchronous
+1,Active,CRT, 120,0500,Critical Thnkng & Social Just,25,17,,,,OL-02,"Koch,William H.",23123568,Online Asynchronous
+1,Active,CRT, 150,0500,Critical Thnkng & Sci Inquiry,25,13,,,,OL-02,"Smith,Nicholas R",10862758,Online Asynchronous
+1,Active,CRT, 150,SC01,Critical Thnkng & Sci Inquiry,25,3,Tu,12:30:00 PM,3:30:00 PM,OF-01,"Smith,Nicholas R",10862758,HyFlex
+1,Active,CRT, 196,050W,Crtcl Thnk: Inq Queer Theories,25,6,,,,OL-02,"Kelley,Brian",23483452,Online Asynchronous
+1,Active,CRT, 245,050W,Crit Thinking & Media Literacy,25,16,,,,OL-02,"Marcus,Matthew G",23001030,Online Asynchronous
+1,Active,CRT, 250,050W,Critical Data Literacy,2,2,,,,OL-02,"Sarajlic,Eldar",23230595,Online Asynchronous
+1,Active,CRT, 300,9000,Being Bodied: Discourse/Rhetor,3,1,,,,,"Kelley,Brian",23483452,Online Synchronous
+1,Active,ESL,  49,1100,English as a Second Language,22,19,Tu,11:00:00 AM,1:45:00 PM,MC-N780,"Yancey,Ann J",10862703,In Person
+1,Active,ESL,  54,1100,English as a Second Language,21,19,MW,11:00:00 AM,1:45:00 PM,FH-1010,"Johnson,Katherine M",10868293,In Person
+1,Active,ESL,  54,1100,English as a Second Language,21,19,Th,11:00:00 AM,1:45:00 PM,MC-N780,"Johnson,Katherine M",,In Person
+1,Active,ESL,  94RW,0800,Eng as 2nd Lang Read/Write,25,24,MTuWTh,8:00:00 AM,9:40:00 AM,OL-03,"Roe,Vanessa HW",10873807,Online Mix
+1,Active,ESL,  94RW,0800,Eng as 2nd Lang Read/Write,25,24,,,,OL-02,"Roe,Vanessa HW",,Online Mix
+1,Active,ESL,  94RW,0900,Eng as 2nd Lang Read/Write,19,15,MWTh,9:00:00 AM,11:45:00 AM,MC-N487,"Morvay,Gabriella",10852830,In Person
+1,Active,ESL,  94RW,0901,Eng as 2nd Lang Read/Write,19,19,TuThF,9:00:00 AM,11:45:00 AM,MC-N470,"Eder,Melissa J",10989774,In Person
+1,Active,ESL,  94RW,1100,Eng as 2nd Lang Read/Write,25,14,MWTh,11:00:00 AM,1:45:00 PM,MC-N455,"Somerville,Leigh",10944597,In Person
+1,Active,ESL,  94RW,1200,Eng as 2nd Lang Read/Write,19,18,MTuTh,12:00:00 PM,2:45:00 PM,MC-N487,"Figueroa,Katherine A",23001210,In Person
+1,Active,ESL,  94RW,1400,Eng as 2nd Lang Read/Write,19,12,TuThF,2:00:00 PM,4:45:00 PM,MC-N470,"Yancey,Ann J",10862703,In Person
+1,Active,ESL,  96,0800,Intensive Reading and Writing,25,18,MWTh,8:00:00 AM,9:40:00 AM,MU-M305,"Arvai,Laszlo",10851443,In Person
+1,Active,ESL,  96,0901,Intensive Reading and Writing,20,20,M,9:00:00 AM,11:45:00 AM,MC-N490,"Flink,Patrick",23597624,In Person
+1,Active,ESL,  96,0901,Intensive Reading and Writing,20,20,Th,9:00:00 AM,11:45:00 AM,MC-N490,"Flink,Patrick",,In Person
+1,Active,ESL,  96,0902,Intensive Reading and Writing,22,13,MTh,9:00:00 AM,11:45:00 AM,MC-S736,New Adjunct,,In Person
+1,Active,ESL,  96,1000,Intensive Reading and Writing,25,13,MWTh,10:00:00 AM,11:40:00 AM,MU-M305,"Arvai,Laszlo",10851443,In Person
+1,Active,ESL,  96,1001,Intensive Reading and Writing,25,15,MWTh,10:00:00 AM,11:40:00 AM,OL-03,"Wei,Yong",10863994,Online Synchronous
+1,Active,ESL,  96,1100,Intensive Reading and Writing,25,20,TuTh,11:00:00 AM,1:45:00 PM,MU-M319,"Gokcora,Saniye D",23231412,In Person
+1,Active,ESL,  96,1200,Intensive Reading and Writing,19,14,M,12:00:00 PM,1:40:00 PM,MC-N786,"Wei,Yong",10863994,In Person
+1,Active,ESL,  96,1200,Intensive Reading and Writing,19,14,Th,12:00:00 PM,1:40:00 PM,MC-N491,"Wei,Yong",,In Person
+1,Active,ESL,  96,1200,Intensive Reading and Writing,19,14,W,12:00:00 PM,1:40:00 PM,MC-N487,"Wei,Yong",,In Person
+1,Active,ESL,  96,1300,Intensive Reading and Writing,20,15,MTuTh,1:00:00 PM,2:40:00 PM,MC-N489,"Vorobel,Oksana",23236366,In Person
+1,Active,ESL,  96,1800,Intensive Reading and Writing,25,24,TuTh,6:30:00 PM,8:15:00 PM,OL-03,"Furlong,Richard",10860451,Online Mix
+1,Active,ESL,  96,1800,Intensive Reading and Writing,25,24,,,,OL-02,"Furlong,Richard",,Online Mix
+1,Active,ESL,  96,1801,Intensive Reading and Writing,25,24,TuTh,6:30:00 PM,8:15:00 PM,OL-03,"Neri-Friedwald,Susan Gayle Kellerman",10884706,Online Mix
+1,Active,ESL,  96,1801,Intensive Reading and Writing,25,24,,,,OL-02,"Neri-Friedwald,Susan Gayle Kellerman",,Online Mix
+1,Active,LIN, 100,0500,Language And Culture,25,20,,,,OL-02,"Vorobel,Oksana",23236366,Online Asynchronous
+1,Active,LIN, 100,0501,Language And Culture,25,16,,,,OL-02,"Gokcora,Saniye D",23231412,Online Asynchronous
+1,Active,LIN, 100,050W,Language And Culture,25,23,,,,OL-02,"Finn,Heather Bobrow",23008817,Online Asynchronous
+1,Active,LIN, 100,160W,Language And Culture,22,16,MW,4:00:00 PM,5:15:00 PM,MC-S738,"Voorhees,Terry",23231337,In Person
+1,Active,LIN, 100,180W,Language And Culture,25,16,M,6:00:00 PM,8:45:00 PM,FH-203,"Voorhees,Terry",23231337,In Person
+1,Active,LIN, 101,0500,Introduction to Linguistics,25,13,,,,OL-02,"Morvay,Gabriella",10852830,Online Asynchronous
+1,Active,LIN, 101,0501,Introduction to Linguistics,25,18,,,,OL-02,"Vorobel,Oksana",23236366,Online Asynchronous
+1,Active,LIN, 101,050W,Introduction to Linguistics,25,13,,,,OL-02,"Wiseman,Cynthia S",10867043,Online Asynchronous
+1,Active,LIN, 110,050W,The Structure of English,25,17,,,,OL-02,"Beaumont,John",11019828,Online Asynchronous
+1,Active,LIN, 140,050W,World/Global Englishes,25,21,,,,OL-02,"Asante,Mabel Y",10867214,Online Asynchronous
+1,Active,LIN, 150,0500,"Lang, Race, and Ethn in the US",25,25,,,,OL-02,"Asante,Mabel Y",10867214,Online Asynchronous
+1,Active,LIN, 150,0501,"Lang, Race, and Ethn in the US",25,23,,,,OL-02,"Grasso,John",11018182,Online Asynchronous
+1,Active,LIN, 150,1100,"Lang, Race, and Ethn in the US",15,11,W,11:00:00 AM,1:45:00 PM,OL-03,"Asante,Mabel Y",10867214,Online Synchronous
+1,Active,LIN, 150,170W,"Lang, Race, and Ethn in the US",19,17,Tu,5:20:00 PM,8:00:00 PM,MC-N471,"Grasso,John",11018182,In Person
+1,Active,LIN, 150,500W,"Lang, Race, and Ethn in the US",25,20,,,,OL-02,"Grasso,John",,Hybrid Asynchronous
+1,Active,LIN, 150,500W,"Lang, Race, and Ethn in the US",25,20,F,12:00:00 PM,1:15:00 PM,MC-N455,"Grasso,John",11018182,Hybrid Asynchronous
+1,Active,LIN, 210,9000,Foundations of Bilingualism,1,1,Th,12:30:00 PM,3:15:00 PM,,"Voorhees,Terry",23231337,In Person
+1,Active,LIN, 250,0500,Forensic Linguistics,25,20,,,,OL-02,"Bandi-Rao,Shoba",11000986,Online Asynchronous
+1,Active,LIN, 250,050W,Forensic Linguistics,25,22,,,,OL-02,"Bandi-Rao,Shoba",11000986,Online Asynchronous
+1,Active,LIN, 250,051W,Forensic Linguistics,25,25,,,,OL-02,"Avni,Sharon",10980032,Online Asynchronous
+1,Active,LIN, 250,110W,Forensic Linguistics,25,18,W,11:00:00 AM,1:45:00 PM,FH-407,"Bandi-Rao,Shoba",11000986,In Person
+1,Active,LIN, 250,500W,Forensic Linguistics,25,23,,,,OL-02,"Avni,Sharon",,Hybrid Asynchronous
+1,Active,LIN, 250,500W,Forensic Linguistics,25,23,W,12:30:00 PM,1:45:00 PM,FH-203,"Avni,Sharon",10980032,Hybrid Asynchronous
+1,Cancelled,ACL, 150,1000,Literacy in American Society,25,0,,,,,,,Online Synchronous
+1,Cancelled,ACL, 150,1300,Literacy in American Society,25,0,,,,,,,Online Synchronous
+1,Cancelled,ACL, 150,1500,Literacy in American Society,25,0,,,,,,,Online Synchronous
+1,Cancelled,ACL, 195,1700,"Literacy, Dev, and Soc Justice",25,0,,,,,,,Online Synchronous
+1,Cancelled,ACL, 195,1800,"Literacy, Dev, and Soc Justice",25,0,,,,,,,Online Synchronous
+1,Cancelled,ACL, 195,5000,"Literacy, Dev, and Soc Justice",25,0,,,,,,,Hybrid Asynchronous
+1,Cancelled,ACL, 200,051W,Literacy Practices:Birth-Adole,25,0,,,,,,,Online Asynchronous
+1,Cancelled,ACL, 200,1000,Literacy Practices:Birth-Adole,25,0,,,,,,,Online Synchronous
+1,Cancelled,ACL, 200,1700,Literacy Practices:Birth-Adole,33,0,,,,,,,In Person
+1,Cancelled,CRT, 100,0507,Critical Thinking,25,0,,,,,,,Online Asynchronous
+1,Cancelled,CRT, 100,054W,Critical Thinking,25,0,,,,,,,Online Asynchronous
+1,Cancelled,CRT, 100,055W,Critical Thinking,25,0,,,,,,,Online Asynchronous
+1,Cancelled,CRT, 100,0801,Critical Thinking,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 100,080W,Critical Thinking,20,0,,,,,,,In Person
+1,Cancelled,CRT, 100,0906,Critical Thinking,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 100,102W,Critical Thinking,20,0,,,,,,,In Person
+1,Cancelled,CRT, 100,1202,Critical Thinking,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 100,1302,Critical Thinking,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 100,140W,Critical Thinking,22,0,,,,,,,In Person
+1,Cancelled,CRT, 100,1601,Critical Thinking,25,0,,,,,,,In Person
+1,Cancelled,CRT, 100,1603,Critical Thinking,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 100,1700,Critical Thinking,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 100,CH01,Critical Thinking,25,0,,,,,,,In Person
+1,Cancelled,CRT, 100,SC01,Critical Thinking,25,0,,,,,,,HyFlex
+1,Cancelled,CRT, 120,110W,Critical Thnkng & Social Just,25,0,,,,,,,In Person
+1,Cancelled,CRT, 120,180W,Critical Thnkng & Social Just,25,0,,,,,,,Online Synchronous
+1,Cancelled,CRT, 150,0501,Critical Thnkng & Sci Inquiry,25,0,,,,,,,Online Asynchronous
+1,Cancelled,CRT, 150,1000,Critical Thnkng & Sci Inquiry,30,0,,,,,,,In Person
+1,Cancelled,CRT, 220,050W,Crit Think thru Virtue Theory,25,0,,,,,,,Online Asynchronous
+1,Cancelled,CRT, 310,050W,Crit Thnkng thru Legal Reason,1,0,,,,,,,Online Asynchronous
+1,Cancelled,ESL,  94RW,0801,Eng as 2nd Lang Read/Write,25,0,,,,,,,Online Mix
+1,Cancelled,ESL,  96,1101,Intensive Reading and Writing,23,0,,,,,,,In Person
+1,Cancelled,ESL,  96,1201,Intensive Reading and Writing,19,0,,,,,,,In Person
+1,Cancelled,ESL,  96,1802,Intensive Reading and Writing,25,0,,,,,,,Online Mix
+1,Cancelled,ESL,  96,1803,Intensive Reading and Writing,25,0,,,,,,,Online Mix
+1,Cancelled,LIN, 101,080W,Introduction to Linguistics,19,0,,,,,,,In Person
+1,Cancelled,LIN, 101,100W,Introduction to Linguistics,19,0,,,,,,,In Person
+1,Cancelled,LIN, 101,1100,Introduction to Linguistics,33,0,,,,,,,In Person
+1,Cancelled,LIN, 101,1200,Introduction to Linguistics,25,0,,,,,,,Online Synchronous
+1,Cancelled,LIN, 101H,0900,Intro to Linguistics (Honors),25,0,,,,,,,In Person
+1,Cancelled,LIN, 110,051W,The Structure of English,25,0,,,,,,,Online Asynchronous
+1,Cancelled,LIN, 125,110W,Language and Religion,20,0,,,,,,,Online Asynchronous
+1,Cancelled,LIN, 140,091W,World/Global Englishes,15,0,,,,,,,In Person
+1,Cancelled,LIN, 150,1200,"Lang, Race, and Ethn in the US",25,0,,,,,,,Online Synchronous
+1,Cancelled,LIN, 150,1602,"Lang, Race, and Ethn in the US",19,0,,,,,,,In Person
+1,Cancelled,LIN, 150H,8000,"Lan,Rac,and Eth in theUS(Honor",10,0,,,,,,,Online Synchronous
+1,Cancelled,LIN, 210,0500,Foundations of Bilingualism,25,0,,,,,,,Online Asynchronous
+1,Cancelled,LIN, 250,0501,Forensic Linguistics,25,0,,,,,,,Online Asynchronous
+1,Cancelled,LIN, 250,0505,Forensic Linguistics,25,0,,,,,,,Online Asynchronous
+1,Cancelled,LIN, 250,054W,Forensic Linguistics,15,0,,,,,,,Online Asynchronous
+1,Cancelled,LIN, 250,111W,Forensic Linguistics,20,0,,,,,,,In Person
+1,Cancelled,LIN, 250,112W,Forensic Linguistics,25,0,,,,,,,In Person
+1,Cancelled,LIN, 250,1400,Forensic Linguistics,15,0,,,,,,,Online Synchronous
+1,Cancelled,LIN, 250,1600,Forensic Linguistics,25,0,,,,,,,In Person
+1,Cancelled,LIN, 250H,110W,Forensic Linguistics (Honors),10,0,,,,,,,In Person
+1,Cancelled,LIN, 250H,1400,Forensic Linguistics (Honors),10,0,,,,,,,Online Synchronous
+7W1,Active,ACL, 150,A050,Literacy in American Society,25,25,,,,OL-02,"Flink,Patrick",23597624,Online Asynchronous
+7W1,Active,CRT, 100,A050,Critical Thinking,25,21,,,,OL-02,"Protopopescu,Tudor I",10854983,Online Asynchronous
+7W1,Active,LIN, 150,A050,"Lang, Race, and Ethn in the US",25,15,,,,OL-02,"Fraser,Kyle A",15181744,Online Asynchronous
+7W1,Cancelled,LIN, 100,A050,Language And Culture,25,0,,,,,,,Online Asynchronous
+7W1,Cancelled,LIN, 250,A050,Forensic Linguistics,25,0,,,,,,,Online Asynchronous
+8W2,Active,ACL, 110,B050,Discipl Read in the Humanities,25,3,,,,OL-02,"Kelley,Brian",23483452,Online Asynchronous
+8W2,Active,ACL, 120,B05W,Reading for Justice and Law,25,4,,,,OL-02,,,Online Asynchronous
+8W2,Active,ACL, 150,B05W,Literacy in American Society,25,9,,,,OL-02,"Robb,Elizabeth",23599952,Online Asynchronous
+8W2,Active,ACL, 200,B050,Literacy Practices:Birth-Adole,25,10,,,,OL-02,"Robb,Elizabeth",23599952,Online Asynchronous
+8W2,Active,CRT, 100,B050,Critical Thinking,25,16,,,,OL-02,"Protopopescu,Tudor I",10854983,Online Asynchronous
+8W2,Active,CRT, 100,B09W,Critical Thinking,25,7,Th,9:00:00 AM,11:45:00 AM,FH-207,,,In Person
+8W2,Active,CRT, 100,B09W,Critical Thinking,25,7,Tu,9:00:00 AM,11:45:00 AM,FH-1203,"Protopopescu,Tudor I",10854983,In Person
+8W2,Active,CRT, 100,B170,Critical Thinking,25,2,W,5:30:00 PM,8:15:00 PM,OL-03,,,Online Mix
+8W2,Active,CRT, 100,B170,Critical Thinking,25,2,,,,OL-02,"Kelley,Brian",23483452,Online Mix
+8W2,Active,CRT, 100,B171,Critical Thinking,35,0,TuTh,5:30:00 PM,8:10:00 PM,FH-211,"Prager,Brian",10865090,In Person
+8W2,Active,CRT, 100.6,B500,Critical Thinking for ESL 95,25,8,M,5:30:00 PM,8:15:00 PM,FH-205,"Leonard,Timothy J",23602368,Hybrid Asynchronous
+8W2,Active,CRT, 100.6,B500,Critical Thinking for ESL 95,25,8,,,,OL-02,,,Hybrid Asynchronous
+8W2,Active,CRT, 120,B05W,Critical Thnkng & Social Just,25,5,,,,OL-02,"Torres,Rosario",10837624,Online Asynchronous
+8W2,Active,CRT, 150,B050,Critical Thnkng & Sci Inquiry,25,4,,,,OL-02,"Smith,Nicholas R",10862758,Online Asynchronous
+8W2,Active,CRT, 245,B05W,Crit Thinking & Media Literacy,25,5,,,,OL-02,"Sarajlic,Eldar",23230595,Online Asynchronous
+8W2,Active,ESL,  94RW,B100,Eng as 2nd Lang Read/Write,25,7,MWTh,10:00:00 AM,12:45:00 PM,OL-03,,,Online Mix
+8W2,Active,ESL,  94RW,B100,Eng as 2nd Lang Read/Write,25,7,,,,OL-02,,,Online Mix
+8W2,Active,ESL,  94RW,B500,Eng as 2nd Lang Read/Write,20,5,MTuW,5:30:00 PM,8:15:00 PM,MC-N490,"Korbl,Csilla B",10924070,Hybrid Asynchronous
+8W2,Active,ESL,  94RW,B500,Eng as 2nd Lang Read/Write,20,5,,,,OL-02,,,Hybrid Asynchronous
+8W2,Active,ESL,  96,B180,Intensive Reading and Writing,25,5,MTuTh,10:00:00 AM,11:40:00 AM,OL-03,,,Online Mix
+8W2,Active,ESL,  96,B180,Intensive Reading and Writing,25,5,,,,OL-02,,,Online Mix
+8W2,Active,ESL,  96,B500,Intensive Reading and Writing,19,5,MWTh,5:30:00 PM,8:15:00 PM,MC-N487,"Chan,Yatsen",10853835,Hybrid Asynchronous
+8W2,Active,ESL,  96,B500,Intensive Reading and Writing,19,5,,,,OL-02,,,Hybrid Asynchronous
+8W2,Active,LIN, 100,B05W,Language And Culture,25,9,,,,OL-02,"Voorhees,Terry",23231337,Online Asynchronous
+8W2,Active,LIN, 101,B050,Introduction to Linguistics,25,4,,,,OL-02,"Vorobel,Oksana",23236366,Online Asynchronous
+8W2,Active,LIN, 125,B050,Language and Religion,25,2,,,,OL-02,,,Online Asynchronous
+8W2,Active,LIN, 140,B050,World/Global Englishes,25,14,,,,OL-02,"Grasso,John",11018182,Online Asynchronous
+8W2,Active,LIN, 150,B050,"Lang, Race, and Ethn in the US",25,13,,,,OL-02,"Fraser,Kyle A",15181744,Online Asynchronous
+8W2,Active,LIN, 250,B05W,Forensic Linguistics,25,11,,,,OL-02,"Bandi-Rao,Shoba",11000986,Online Asynchronous
+8W2,Cancelled,ACL, 120,B050,Reading for Justice and Law,25,0,,,,,,,Online Asynchronous
+8W2,Cancelled,ACL, 150,B050,Literacy in American Society,25,0,,,,,,,Online Asynchronous
+8W2,Cancelled,CRT, 100,B090,Critical Thinking,25,0,,,,,,,In Person
+8W2,Cancelled,CRT, 120,B050,Critical Thnkng & Social Just,25,0,,,,,,,Online Asynchronous
+8W2,Cancelled,CRT, 245,B050,Crit Thinking & Media Literacy,25,0,,,,,,,Online Asynchronous
+8W2,Cancelled,LIN, 100,B050,Language And Culture,25,0,,,,,,,Online Asynchronous
+8W2,Cancelled,LIN, 250,B050,Forensic Linguistics,25,0,,,,,,,Online Asynchronous
+PCL,Active,CRT, 100,0101,Critical Thinking,35,21,Sa,8:30:00 AM,11:15:00 AM,FH-210,"Burris,Troy A",10999992,In Person
+PCL,Active,CRT, 100,3000,Critical Thinking,35,12,TuTh,1:17:00 PM,2:50:00 PM,OF-01,"Robb,Elizabeth",23599952,In Person
+PCL,Active,CRT, 100,3001,Critical Thinking,35,12,TuTh,1:17:00 PM,2:50:00 PM,OF-01,"Burris,Troy A",10999992,In Person
+PCL,Active,CRT, 100,4000,Critical Thinking,35,19,TuW,7:40:00 AM,8:00:00 AM,OF-01,"Sarajlic,Eldar",23230595,In Person
+PCL,Cancelled,CRT, 100,0100,Critical Thinking,25,0,,,,,,,In Person
+WIN,Active,ACL, 150,J050,Literacy in American Society,25,19,,,,OL-02,"Flink,Patrick",23597624,Online Asynchronous
+WIN,Active,CRT, 100,J051,Critical Thinking,25,24,,,,OL-02,"Sarajlic,Eldar",23230595,Online Asynchronous
+WIN,Active,LIN, 150,J050,"Lang, Race, and Ethn in the US",25,14,,,,OL-02,"Wiseman,Cynthia S",10867043,Online Asynchronous
+WIN,Active,LIN, 250,J050,Forensic Linguistics,25,11,,,,OL-02,"Avni,Sharon",10980032,Online Asynchronous
+WIN,Cancelled,CRT, 100,J050,Critical Thinking,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,CRT, 100,J052,Critical Thinking,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,CRT, 100.6,J170,Critical Thinking for ESL 95,25,0,,,,,,,Online Mix
+WIN,Cancelled,CRT, 120,J050,Critical Thnkng & Social Just,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,CRT, 150,J050,Critical Thnkng & Sci Inquiry,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,LIN, 100,J050,Language And Culture,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,LIN, 100,J051,Language And Culture,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,LIN, 101,J050,Introduction to Linguistics,25,0,,,,,,,Online Asynchronous
+WIN,Cancelled,LIN, 250,J051,Forensic Linguistics,25,0,,,,,,,Online Asynchronous
