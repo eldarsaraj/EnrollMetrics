@@ -405,7 +405,7 @@ with st.container():
         st.metric(label='Total enrollment', value=2111, delta='+54')                           
         
     with col3:
-         st.metric(label='Total sections', value=214, delta='+78')
+         st.metric(label='Total sections', value=139, delta='+3')
          
     with col4:
          st.metric(label='Sections cancelled', value=75, delta='-12')
