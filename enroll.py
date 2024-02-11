@@ -651,7 +651,7 @@ with st.container():
             st.altair_chart(chart, use_container_width=True)
 
         with col3:
-            courses_of_interest = ["CRT 100", "CRT 120", "CRT 245", "CRT 100H"]
+            courses_of_interest = ["CRT 100", "CRT 120", "CRT 150", "CRT 245", "CRT 100H"]
 
             spring_2023_crt = spring_2023.get_course('CRT')
             spring_2024_crt = spring_2024.get_course('CRT')
@@ -664,7 +664,7 @@ with st.container():
             comparison0 = pd.DataFrame({
                 'Course': courses_of_interest,
                 'Spring 2023': spring_2023_crt_filtered['# Enrolled'],
-                'Spring 2024': [584, 21, 21, 19]
+                'Spring 2024': [584, 22, 20, 21, 19]
             })
 
             
